@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    background-color: #ffe9f0;
+}
+
+* > h1 {
+    font-size: 4vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    padding: 0;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+* > h2 {
+    font-size: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* background-color: lightgreen; */
+    margin: 2rem;
+}
+
+* > h3 {
+    font-size: 1.25vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: lightsalmon; */
+}
+
+/* Navigation Styles */
+
+.nav-outer > * {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* background-color: lightblue; */
+    gap: 2rem;
+    padding-right: 2rem;
+    font-size: 1.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    transition:
+        color .5s;
+}
+
+a:hover {
+    color: salmon;
+}
+
+/* Hero Styles */
+
+.hero-img {
+    width: 100%;
+    height: 50vh;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.hero-img > p {
+    font-size: 1.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    padding: 0;
+    /* background-color: lightcyan; */
+}
+
+/* Index Page Styles */
+
+.birds-outer {
+    width: 100%;
+    margin: auto;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.birds-inner {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding-top: 1rem;
+    /* background-color: lightpink; */
+}
+
+.birds-item > img {
+    width: 100%;
+    border: 3px solid pink;
+    border-radius: 10%;
+    transition:
+        box-shadow .5s;
+}
+
+.birds-item > img:hover {
+    box-shadow: 1px 1px 2px black;
+}
+
+/* About Page Styles */
+
+.about-outer {
+    width: 100%;
+    margin: auto;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.about-inner > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 6rem;
+    gap: 20rem;
+    width: 100%;
+    font-size: 1.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: lightblue; */
+}
+
+.about-inner > ul :hover {
+    color: salmon;
+}
+
+/* Contact Page Styles */
+
+.contact-outer {
+    width: 100%;
+    margin: auto;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    padding-bottom: 6rem;
+    font-size: 1.25vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-outer > img {
+    border: 3px solid pink;
+    border-radius: 10%;
+}
+
+.contact-inner {
+    padding: 3rem;
+}
+
+/* Footer Styles */
+
+.footer-outer {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-outer > p {
+    margin: .5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Mobile Styles */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+/* Mobile Navigation Styles */
+
+    .nav-outer > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2vw;
+    }
+
+/* Mobile Hero Styles */
+
+    .hero-img {
+        max-height: 25vh;
+    }
+
+    .hero-img > h1 {
+        font-size: 5vw;
+    }
+
+    .hero-img > p {
+        font-size: 2vw;
+    }
+
+/* Mobile Index Page Styles */
+
+    .birds-inner {
+        display: block;
+        max-width: 90%;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+     .birds-outer > h2 {
+        font-size: 2.5vw;
+    }
+
+    .birds-item > h3 {
+        font-size: 2vw;
+        padding-bottom: 1rem;
+    }
+
+/* Mobile Footer Styles */
+
+    .footer-outer {
+        display: block;
+        margin: 2rem;
+    }
+
+    .footer-outer > p {
+        font-size: .65rem;
+    }
+
+/* Mobile About Page Styles */
+
+    .about-outer {
+        width: 100%;
+    }
+
+    .about-inner > ul {
+        width: 90%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+        gap: 3rem;
+        font-size: 2vw;
+    }
+
+/* Mobile Contact Page Styles */
+
+    .contact-outer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .contact-inner {
+        font-size: 2vw;
+        padding: 1rem;
+    }
+}
+
+/* Tablet Styles */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* Tablet Navigation Styles */
+
+    .nav-outer > * {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5vw;
+    }
+
+/* Tablet Hero Styles */
+
+    .hero-img {
+        max-height: 25vh;
+    }
+
+    .hero-img > h1 {
+        font-size: 3.5vw;
+    }
+
+    .hero-img > p {
+        font-size: 1.5vw;
+    }
+
+/* Tablet Index Page Styles */
+
+    .birds-inner {
+        display: block;
+        max-width: 90%;
+        height: auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+     .birds-outer > h2 {
+        font-size: 2vw;
+    }
+
+    .birds-item > h3 {
+        font-size: 1.5vw;
+        padding-bottom: 1rem;
+    }
+
+/* Tablet Footer Styles */
+
+    .footer-outer {
+        display: block;
+        margin: 2rem;
+    }
+
+    .footer-outer > p {
+        font-size: .75rem;
+    }
+
+/* Tablet About Page Styles */
+
+    .about-outer {
+        width: 100%;
+    }
+
+    .about-inner > ul {
+        width: 90%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+        gap: 3rem;
+        font-size: 1.75vw;
+    }
+
+/* Tablet Contact Page Styles */
+
+    .contact-outer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .contact-inner {
+        font-size: 1.5vw;
+        padding: 1rem;
+    }
+}
