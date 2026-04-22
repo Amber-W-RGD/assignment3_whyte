@@ -240,7 +240,8 @@ a:hover {
 /* Mobile Footer Styles */
 
     .footer-outer {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 2rem;
     }
 
@@ -342,7 +343,8 @@ a:hover {
 /* Tablet Footer Styles */
 
     .footer-outer {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin: 2rem;
     }
 
